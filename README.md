@@ -1,5 +1,7 @@
 <img src="https://github.com/anfederico/Clairvoyant/blob/master/media/Logo.png?raw=true" align="right" style="width:130px;height:130px;"/>
 
+
+
 # Human Activity Recognition Analysis  ![built with R](https://img.shields.io/badge/built%20with-R-blue.svg)
 
 ### Background
