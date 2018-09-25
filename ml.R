@@ -43,3 +43,17 @@ prediction1 <- predict(model1, subTesting, type = "class")
 # Plot of the Decision Tree
 rpart.plot(model1, main="Classification Tree", extra=102, under=TRUE, faclen=0)
 
+# Test results on our subTesting data set
+confusionMatrix(prediction1, subTesting$classe)
+
+model2 <- randomForest(classe ~. , data=subTraining, method="class")
+
+# Predicting
+prediction2 <- predict(model2, subTesting, type = "class")
+
+# Test results on subTesting data set
+confusionMatrix(prediction2, subTesting$classe)
+
+# predict outcome levels on the original Testing data set using Random Forest algorithm
+predictfinal <- predict(model2, testingset, type="class")
+predictfinal
