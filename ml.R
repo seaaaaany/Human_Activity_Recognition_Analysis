@@ -23,3 +23,14 @@ dim(trainingset)
 dim(testingset)
 head(trainingset)
 head(testingset)
+
+subsamples <- createDataPartition(y=trainingset$classe, p=0.75, list=FALSE)
+subTraining <- trainingset[subsamples, ] 
+subTesting <- trainingset[-subsamples, ]
+dim(subTraining)
+dim(subTesting)
+head(subTraining)
+head(subTesting)
+
+# plot the results
+plot(subTraining$classe, col="cadetblue2", main="The subTraining data set", xlab="classe levels", ylab="Frequency")
