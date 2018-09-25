@@ -1,4 +1,4 @@
-<img src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiz2IXzm9XdAhXZIjQIHZ8kCeUQjRx6BAgBEAU&url=https%3A%2F%2Fwww.kisspng.com%2Fpng-creative-letter-r-14709%2F&psig=AOvVaw0fxX-MZCl_CnbKZZR-5OXs&ust=1537932676466779" align="right" />
+<img src="https://banner2.kisspng.com/20171209/74b/creative-letter-r-5a2c1bf5842364.1146196815128401815412.jpg" align="right" style="width:150px;height:130px;"/>
 
 # Human Activity Recognition Analysis
 
