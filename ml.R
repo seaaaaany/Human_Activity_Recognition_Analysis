@@ -57,3 +57,8 @@ confusionMatrix(prediction2, subTesting$classe)
 # predict outcome levels on the original Testing data set using Random Forest algorithm
 predictfinal <- predict(model2, testingset, type="class")
 predictfinal
+
+# Output the script and result
+sink("human_activities.pdf", append=FALSE, split=FALSE)
+
+sink()
