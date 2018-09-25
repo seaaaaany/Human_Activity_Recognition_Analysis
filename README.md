@@ -1,14 +1,24 @@
-<img src="https://banner2.kisspng.com/20171209/74b/creative-letter-r-5a2c1bf5842364.1146196815128401815412.jpg" align="right" style="width:150px;height:130px;"/>
+<img src="https://github.com/anfederico/Clairvoyant/blob/master/media/Logo.png?raw=true" align="right" style="width:130px;height:130px;"/>
 
-# Human Activity Recognition Analysis
+# Human Activity Recognition Analysis  ![built with R](https://img.shields.io/badge/built%20with-R-blue.svg)
 
-![built with R](https://img.shields.io/badge/built%20with-R-blue.svg) 
+### Background
 
-
-
-
+Using devices such as *Jawbone Up*, *Nike FuelBand*, and *Fitbit* it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement – a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how *much* of a particular activity they do, but they rarely quantify *how well they do it*. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website here:<http://web.archive.org/web/20161224072740/http:/groupware.les.inf.puc-rio.br/har> (see the section on the Weight Lifting Exercise Dataset).
 
 
+
+##### Dataset
+
+Click here to download the [Training data](<https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv>) and [Test Data](<https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv>).
+
+---
+
+
+
+### Requirements
+
+> Here are the R packages I've selected for this project.
 
 ```R
 library(caret)
@@ -17,7 +27,13 @@ library(rpart)
 library(rpart.plot)
 ```
 
+---
 
+
+
+### R Script
+
+> You can find the entire code for this project below.
 
 ```R
 set.seed(12345)
@@ -75,6 +91,18 @@ confusionMatrix(prediction2, subTesting$classe)
 predictfinal <- predict(model2, testingset, type="class")
 predictfinal
 ```
+
+---
+
+
+
+### Results
+
+![result](https://github.com/yycyjqc/Human_Activity_Recognition_Analysis/blob/master/img/Rplot01.png?raw=true)
+
+![decision_tree](https://github.com/yycyjqc/Human_Activity_Recognition_Analysis/blob/master/img/Rplot02.jpeg?raw=true)
+
+You can always find the decision tree [here](https://github.com/yycyjqc/Human_Activity_Recognition_Analysis/blob/master/img/Rplot02.jpeg).
 
 
 
