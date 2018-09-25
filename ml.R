@@ -3,6 +3,7 @@ library(randomForest)
 library(rpart)
 library(rpart.plot)
 
+set.seed(12345)
 # Loading the training data set
 # Replace all missing data with "NA"
 trainingset <- read.csv("pml-training.csv", na.strings=c("NA","#DIV/0!", ""))
