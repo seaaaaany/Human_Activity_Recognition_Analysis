@@ -34,3 +34,12 @@ head(subTesting)
 
 # plot the results
 plot(subTraining$classe, col="cadetblue2", main="The subTraining data set", xlab="classe levels", ylab="Frequency")
+
+model1 <- rpart(classe ~ ., data=subTraining, method="class")
+
+# Predicting
+prediction1 <- predict(model1, subTesting, type = "class")
+
+# Plot of the Decision Tree
+rpart.plot(model1, main="Classification Tree", extra=102, under=TRUE, faclen=0)
+
